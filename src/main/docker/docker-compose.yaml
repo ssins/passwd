@@ -1,0 +1,12 @@
+version: "2.1"
+services:
+  ssins-passwd:
+    image: ssins/passwd:1.0.0
+    restart: always
+    hostname: tonglian_token
+    ports:
+      - 18760:8080
+    volumes:
+      - ./log/:/log/
+#    extra_hosts:
+#      - "db.ssins.cn:www.ssins.cn"
